@@ -1,5 +1,6 @@
-# model_name="outputs/test_output"
-model_name="google/gemma-3-4b-pt"
+model_name="outputs/test_output"
+# model_name="google/gemma-3-270m-it"
+# model_name="google/gemma-3-1b-it"
 export TRANSFORMERS_VERBOSITY=error # Suppress warnings
 
 CUDA_VISIBLE_DEVICES=0,1 python -m lm_eval --model hf \
