@@ -1,0 +1,17 @@
+task: en_sw_translate_mich
+dataset_path: michsethowusu/english-congo-swahili_sentence-pairs_mt560
+dataset_name: null
+training_split: train
+validation_split: train
+output_type: generate_until
+doc_to_text: "translate English to Swahili: {{eng}}. Only include the translated sentence. Do not contains others\n for example \n input: He will become a nation also, and he also will be great.\n Output: Yeye pia atakuwa taifa, naye pia atakuwa mkuu."
+doc_to_target: "{{swc}}"
+metric_list:
+  # - metric: wer
+  #   aggregation: mean
+  #   higher_is_better: false
+  - metric: !function metrics.bleu
+    aggregation: !function metrics.agg_bleu
+    higher_is_better: true
+metadata:
+  version: 1.0
