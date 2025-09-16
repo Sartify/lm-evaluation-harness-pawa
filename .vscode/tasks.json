@@ -7,21 +7,23 @@
       "command": "python",
       "args": [
         "-m",
+        "accelerate.commands.launch",
+        "-m",
         "lm_eval",
         "--model",
         "hf",
         "--model_args",
-        "pretrained=google/gemma-3-270m-it,device_map=auto",
+        "pretrained=google/gemma-3-4b-it",
         "--tasks",
         "en_sw_translate_mich",
         "--batch_size",
-        "4",
+        "8",
         "--apply_chat_template",
         "true",
         "--output_path",
         "outputs/flan-t5-small-wmt-ro-en.json",
         "--limit",
-        "100"
+        "10"
       ],
       "options": {
         "cwd": "${workspaceFolder}"

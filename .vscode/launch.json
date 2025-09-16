@@ -10,7 +10,7 @@
         "--model",
         "hf",
         "--model_args",
-        "pretrained=google/gemma-3-270m-it,device_map=auto",
+        "pretrained=google/gemma-3-4b-it,device_map=auto",
         "--tasks",
         "en_sw_translate_mich",
         "--batch_size",
@@ -20,7 +20,7 @@
         "--output_path",
         "outputs/flan-t5-small-wmt-ro-en.json",
         "--limit",
-        "100"
+        "10"
       ],
       "cwd": "${workspaceFolder}",
       "env": {
