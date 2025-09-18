@@ -4,7 +4,7 @@ dataset_name: null
 training_split: train
 validation_split: train
 output_type: generate_until
-doc_to_text: !function utils.doc_to_text
+doc_to_text: !function utils.doc_to_text_template
 doc_to_target: "{{swc}}"
 generation_kwargs:
   # max_gen_toks: 512

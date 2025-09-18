@@ -23,13 +23,13 @@
         "--output_path",
         "outputs/flan-t5-small-wmt-ro-en.json",
         "--limit",
-        "10"
+        "10000"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
       },
       "env": {
-        "CUDA_VISIBLE_DEVICES": "0,1",
+        "CUDA_VISIBLE_DEVICES": "0",
         "TRANSFORMERS_VERBOSITY": "error"
       }
     }
