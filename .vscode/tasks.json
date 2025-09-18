@@ -15,7 +15,7 @@
         "--model_args",
         "pretrained=google/gemma-3-4b-it",
         "--tasks",
-        "en_sw_translate_mich",
+        "en_congo_sw_translate",
         "--batch_size",
         "8",
         "--apply_chat_template",

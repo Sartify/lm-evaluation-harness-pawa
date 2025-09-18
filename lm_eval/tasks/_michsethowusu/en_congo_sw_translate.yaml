@@ -1,4 +1,4 @@
-task: en_sw_translate_mich
+task: en_congo_sw_translate
 dataset_path: michsethowusu/english-congo-swahili_sentence-pairs_mt560
 dataset_name: null
 training_split: train
